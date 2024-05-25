@@ -10,6 +10,8 @@ editor: visual
 
 *Breaking Bad* is an American television series created by Vince Gilligan that aired on AMC from January 20, 2008, to September 29, 2013. The show follows Walter White, a high school chemistry teacher turned methamphetamine manufacturer, who partners with former student Jesse Pinkman to secure his family's financial future after being diagnosed with terminal lung cancer. The series explores themes of morality, consequences, and the American Dream.
 
+![Breaking Bad Logo](https://upload.wikimedia.org/wikipedia/commons/7/77/Breaking_Bad_logo.svg)
+
 ## Summary of Basic Statistics
 
 -   **Premiere Date**: January 20, 2008
