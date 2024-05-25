@@ -1,0 +1,86 @@
+---
+title: "index"
+format: html
+editor: visual
+---
+
+# ***Breaking Bad***
+
+## Brief Description of the Show
+
+*Breaking Bad* is an American television series created by Vince Gilligan that aired on AMC from January 20, 2008, to September 29, 2013. The show follows Walter White, a high school chemistry teacher turned methamphetamine manufacturer, who partners with former student Jesse Pinkman to secure his family's financial future after being diagnosed with terminal lung cancer. The series explores themes of morality, consequences, and the American Dream.
+
+## Summary of Basic Statistics
+
+-   **Premiere Date**: January 20, 2008
+
+-   **Finale Date**: September 29, 2013
+
+-   **Number of Seasons**: 5
+
+-   **Total Episodes**: 62
+
+-   **Average Viewership**: 3.2 million viewers per episode
+
+-   **Highest Viewership**: 10.28 million viewers for the series finale "Felina"
+
+-   **Awards**: 16 Primetime Emmy Awards, including Outstanding Drama Series
+
+## Viewership Over Time
+
+Here is a summary of the viewership over the course of the series:
+
+-   **Season 1**: Average viewership of 1.23 million
+
+-   **Season 2**: Average viewership of 1.41 million
+
+-   **Season 3**: Average viewership of 1.52 million
+
+-   **Season 4**: Average viewership of 1.90 million
+
+-   **Season 5A**: Average viewership of 2.58 million
+
+-   **Season 5B**: Average viewership
+
+```{r}
+# Viewership Over Time
+library(ggplot2)
+
+seasons <- c("Season 1", "Season 2", "Season 3", "Season 4", "Season 5A", "Season 5B")
+viewership <- c(1.23, 1.41, 1.52, 1.90, 2.58, 6.04)
+
+data <- data.frame(seasons, viewership)
+
+ggplot(data, aes(x=seasons, y=viewership)) +
+  geom_line(group=1, color="blue") +
+  geom_point(color="red") +
+  theme_minimal() +
+  labs(title="Breaking Bad Viewership Over Time",
+       x="Season",
+       y="Average Viewership (Millions)")
+```
+
+```{r}
+# Episode-to-Episode Changes in Viewership
+
+# Episode data for Season 5B
+episodes <- 1:8
+episode_viewership <- c(2.93, 3.37, 4.41, 4.41, 5.11, 6.58, 6.58, 10.28)
+
+episode_data <- data.frame(episodes, episode_viewership)
+
+ggplot(episode_data, aes(x=episodes, y=episode_viewership)) +
+  geom_line(group=1, color="blue") +
+  geom_point(color="red") +
+  theme_minimal() +
+  labs(title="Breaking Bad Season 5B Episode Viewership",
+       x="Episode",
+       y="Viewership (Millions)")
+
+```
+
+## Analysis of Changes in Viewership
+
+The viewership of *Breaking Bad* increased significantly over its run. From Season 1 to Season 5B, the average viewership grew from 1.23 million to 6.04 million. The most notable increase occurred in the final half-season (Season 5B), where the viewership surged from 2.58 million in Season 5A to 6.04 million, peaking at 10.28 million for the series finale "Felina." This reflects a growing interest and audience engagement, likely driven by critical acclaim and word-of-mouth.
+
+The viewership increased by approximately 4.81 million viewers between the third and fifth seasons, demonstrating the show's expanding popularity and impact on popular culture.
